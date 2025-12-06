@@ -1,5 +1,5 @@
 Data-Driven Intermittent Fault Diagnosis in Synchronous Generators
-This repository contains the implementation of a deep learning framework designed to detect intermittent inter-turn short circuits in synchronous generators. By utilizing a custom Fault Injection Unit (FIU) and 1D Convolutional Neural Networks (3D-CNN), this system identifies transient fault precursors before they lead to permanent machine failure.
+This repository contains the implementation of a deep learning framework designed to detect intermittent inter-turn short circuits in synchronous generators. By utilizing a custom Fault Injection Unit (FIU) and 3D Convolutional Neural Networks (3D-CNN), this system identifies transient fault precursors before they lead to permanent machine failure.
 
 Project Background
 Condition monitoring is essential for maintaining the reliability of electrical machinery, particularly synchronous generators used in power production and maritime applications. A significant issue in these machines is stator inter-turn defects, which often begin as "intermittent faults"—short circuits lasting only a fraction of a second (0.1s to 0.5s).
@@ -18,7 +18,7 @@ We evaluated the model on intermittent faults with durations of 0.5s, 0.2s, and 
 Prerequisites
 Python 3.8+
 
-TensorFlow 2.x (for 1D-CNN implementation)
+TensorFlow 2.x (for 3D-CNN implementation) with GPU support for faster epochs.
 
 NumPy, SciPy
 
@@ -26,4 +26,4 @@ PyWavelets (for wavelet denoising)
 
 NI-DAQmx (if interfacing with hardware)
 
-The repository contains a sample of Faulty, Healthy and Intermittent fault data used.
+The repository contains a sample of Faulty, Healthy and Intermittent fault data used which gives an example of the data to be provided to the above code.
