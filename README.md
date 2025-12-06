@@ -11,7 +11,7 @@ Data Acquisition: We utilize a custom 5 kVA synchronous generator connected to a
 Signal Processing:
 FFT Analysis: Used to analyze harmonic ripple content at the third harmonic (150 Hz).
 Wavelet Denoising: We apply Discrete Wavelet Transform (using db4, sym4, and BIOR2.2 wavelets) to isolate fault signatures in short-duration signals.
-Deep Learning Model: The processed signals are fed into a 1D Convolutional Neural Network (1D-CNN). The network comprises multiple convolutional layers with decreasing filter sizes to capture hierarchical transient spikes.
+Deep Learning Model: The processed signals are fed into a 3D Convolutional Neural Network (3D-CNN). The network comprises multiple convolutional layers with decreasing filter sizes to capture hierarchical transient spikes.
 Performance Results
 We evaluated the model on intermittent faults with durations of 0.5s, 0.2s, and 0.1s. While standard frequency domain analysis (FFT) struggled with shorter faults, wavelet-based preprocessing significantly improved detection rates.
 
