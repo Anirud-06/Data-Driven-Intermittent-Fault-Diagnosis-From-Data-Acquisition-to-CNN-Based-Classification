@@ -22,6 +22,8 @@ TensorFlow 2.x (for 3D-CNN implementation) with GPU support for faster epochs.
 
 NumPy, SciPy
 
+NI LabView
+
 PyWavelets (for wavelet denoising)
 
 NI-DAQmx (if interfacing with hardware)
